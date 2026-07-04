@@ -216,3 +216,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+# IDEA配置文件
+.idea/
+*.iml
+# 虚拟环境、缓存一并忽略
+
+__pycache__/
+*.pyc
