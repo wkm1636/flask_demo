@@ -11,7 +11,10 @@ async def root():
 def get_user():
     return {"name": "John", "age": 20}
 
-# 写一个注释
+@app.post("/user/")
+def create_user(name: str, age: int):
+    return {"name": name, "age": age}
+
 
 @app.get("/hello/{name}")
 async def say_hello(name: str):
