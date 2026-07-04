@@ -19,3 +19,7 @@ def create_user(name: str, age: int):
 @app.get("/hello/{name}")
 async def say_hello(name: str):
     return {"message": f"Hello {name}"}
+
+@app.get("/users/{id}")
+async def get_user(id: int):
+    return {"id": id}
