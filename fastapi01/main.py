@@ -25,3 +25,6 @@ async def say_hello(name: str):
 async def say_hello(name: str, age: int):
     return {"message": f"Hello {name}, you are {age} years old"}
 
+@app.get("/users/{id}")
+async def get_user(id: int):
+    return {"id": id}
